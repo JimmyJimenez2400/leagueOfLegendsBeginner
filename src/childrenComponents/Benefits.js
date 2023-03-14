@@ -1,4 +1,4 @@
-import Arrow from '../assets/img/Arrow 1.svg';
+import Arrow from '../assets/img/arrow.svg';
 
 export default function Benefits() {
   return (
@@ -14,7 +14,7 @@ export default function Benefits() {
           <figure className="benefit-figure">
             <img src={Arrow} alt="Arrow Pointing Up" />
           </figure>
-          <p>Increase Map Awareness</p>
+          <p>Increase Laning</p>
         </article>
         <article className="benefit">
           <figure className="benefit-figure">

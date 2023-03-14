@@ -164,11 +164,12 @@ a {
 
 
 .benefits {
-
   display: flex;
   justify-content: center;
   padding: 2rem;
   flex: 1;
+  background-color: black;
+  color: white;
 }
 
 .benefitsToLearn {
@@ -176,7 +177,7 @@ a {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 26px;
   width: 80%;
 
 }
@@ -189,9 +190,65 @@ a {
   align-items: center;
   width: 20%;
   text-align: center;
+  font-size: clamp(16px, 1.5vw, 60rem);
+  font-weight: bold;
+  white-space: nowrap;
+  padding: 1em;
+  border: 1px solid white;
+  border-radius: 1em;
+}
+
+.benefit>* {
+  margin-bottom: 10px;
 }
 
 .benefit-figure {
   width: 100%;
   height: 100%;
+
 }
+
+.benefit-figure img {
+  filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+}
+
+
+.benefit-figure img {
+  border-color: transparent;
+  border-style: solid;
+  opacity: 1;
+
+  animation-name: uparrow;
+  animation-duration: 0.6s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes uparrow {
+  0% {
+    transform: translateY(0);
+    opacity: 0.3;
+  }
+
+  100% {
+    transform: translateY(-4px);
+    opacity: 0.9;
+  }
+}
+
+/* .benefit-figure {
+  -webkit-animation: uparrow 0.6s infinite alternate ease-in-out;
+}
+
+@-webkit-keyframes uparrow {
+  0% {
+    -webkit-transform: translateY(0);
+    opacity: 0.4
+  }
+
+  100% {
+    -webkit-transform: translateY(-0.4em);
+    opacity: 0.9
+  }
+} */
