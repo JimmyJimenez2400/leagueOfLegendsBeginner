@@ -1,13 +1,15 @@
 import './App.css';
-import Header from './modules/Header.js';
-import Main from './modules/Main.js';
+import Header from './mainComponents/Header.js';
+import Main from './mainComponents/Main.js';
+import Footer from './mainComponents/Footer.js';
 
 function App() {
   return (
-    <div id="content">
+    <>
       <Header />
       <Main />
-    </div>
+      <Footer />
+    </>
   );
 }
 
